@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog websites</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            font-family: 'Inter', sans-serif;
+            padding:2rem 1rem;
+            background-color: #FBAB7E;
+            background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+        }
+        .main_container{
+             display: grid;
+             padding: 2rem;
+             grid-template-columns: repeat(1,1fr);
+             gap: 1.5rem;
+
+}
+        #nav{
+        text-align: center;    
+
+        }
+        .contentBox{
+            width:300px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px 2px rgb(208, 0, 255);      
+        }
+     .mainimg{
+         position:relative;
+         height: 15rem;
+        width:300px;
+    border-radius: 5px;
+    transition: all 0.3 linear 0;
+   }
+.imgBox{
+    position: relative;
+    display: flex;
+    transition: all 0.6 linear 0;
+}
+.imgBox .overlay{
+    display: flex;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.356);
+    position:absolute;
+    height:100%;
+    width:100%; 
+    justify-content: center;
+    align-items: center;
+     opacity: 0; 
+     transition: all 0.3 linear 0;
+}
+.footerimg{
+            display:grid;
+            grid-template-columns: 1fr 3.5fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "logo name button"
+            "logo date button";
+            width:300px;    
+        }
+
+.logo{
+    grid-area: logo;
+}
+.name{
+grid-area:name ;
+}
+.date{
+grid-area: date;
+}
+button{
+    width:100px;
+    height: 40px;
+    grid-area: button;
+
+}
+.para{
+    
+    width:300px;
+}
+.imgBox:hover{
+    transform: scale(1.1);
+  
+}
+.imgBox:hover .overlay{
+    opacity:1;
+
+}
+
+@media (min-width:640px){
+    .main_container{
+        grid-template-columns: repeat(4,1fr);
+
+    }
+}
+@media (min-width:640px) and (max-width:1080px){
+    .main_container{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+@media (min-width:1080px) and (max-width:1300px){
+    .main_container{
+        grid-template-columns: repeat(3,1fr);
+
+    }
+} 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="nav">
+            <h1>Blog website </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis iusto laboriosam tempora voluptatem laborum voluptatum dolores reiciendis. Quibusdam sed accusamus ex natus quasi ut alias dignissimos itaque, quas sit? Asperiores, sapiente, quas,</p>
+        </header>
+        <main class="main_container">
+            <div class="contentBox">
+                <div class="imgBox">
+                <img class="mainimg"src="tech.jpg" alt="" srcset="" width="300px" height="200px">
+                <div class="overlay">
+                <span style="font-size: 50px;" >Click on</span>
+                  </div>
+                  </div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit a facere rem doloremque quo.</p>
+                <div class="footerimg">
+                <img class="logo" src="logo.jpg"  width="40px">
+                <p class="name">John Doe</p>
+                <p class="date">20 Sep 2024</p>
+                <button>Technology</button>
+            </div>
+            </div>
+            <div class="contentBox">
+                <div class="imgBox">
+                    <img class="mainimg"src="tech.jpg" alt="" srcset="" width="300px" height="200px">
+                    <div class="overlay">
+                    <span style="font-size: 50px;" >Click on</span>
+                </div>
+            </div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit a facere rem doloremque quo.</p>
+        
+                <div class="footerimg">
+                    <img class="logo" src="logo.jpg"  width="40px">
+                    <p class="name">John Doe</p>
+                    <p class="date">20 Sep 2024</p>
+                    <button>Technology</button>
+                </div>
+            </div>
+            <div class="contentBox">      
+                <div class="imgBox">
+                    <img class="mainimg"src="tech.jpg" alt="" srcset="" width="300px" height="200px">
+                    <div class="overlay">
+                    <span style="font-size: 50px;" >Click on</span>
+                </div>
+            </div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit a facere rem doloremque quo.</p>
+        
+                <div class="footerimg">
+                    <img class="logo" src="logo.jpg"  width="40px">
+                    <p class="name">John Doe</p>
+                    <p class="date">20 Sep 2024</p>
+                    <button>Technology</button>
+                </div></div>
+            <div class="contentBox">           
+                <div class="imgBox">
+                    <img class="mainimg"src="tech.jpg" alt="" srcset="" width="300px" height="200px">
+                    <div class="overlay">
+                    <span style="font-size: 50px;" >Click on</span>
+                </div>
+            </div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit a facere rem doloremque quo.</p>
+                <div class="footerimg">
+                    <img class="logo" src="logo.jpg"  width="40px">
+                    <p class="name">John Doe</p>
+                    <p class="date">20 Sep 2024</p>
+                    <button>Technology</button>
+                </div></div>
+            <div class="contentBox">          
+                <div class="imgBox">
+                    <img class="mainimg"src="tech.jpg" alt="" srcset="" width="300px" height="200px">
+                    <div class="overlay">
+                    <span style="font-size: 50px;" >Click on</span>
+                </div>
+            </div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit a facere rem doloremque quo.</p>
+                <div class="footerimg">
+                    <img class="logo" src="logo.jpg"  width="40px">
+                    <p class="name">John Doe</p>
+                    <p class="date">20 Sep 2024</p>
+                    <button>Technology</button>
+                </div></div>
+            <div class="contentBox">      
+                <div class="imgBox">
+                    <img class="mainimg"src="tech.jpg" alt="" srcset="" width="300px" height="200px">
+                    <div class="overlay">
+                    <span style="font-size: 50px;" >Click on</span>
+                </div>
+            </div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit a facere rem doloremque quo.</p>
+                <div class="footerimg">
+                    <img class="logo" src="logo.jpg"  width="40px">
+                    <p class="name">John Doe</p>
+                    <p class="date">20 Sep 2024</p>
+                    <button>Technology</button>
+                </div></div>
+            <div class="contentBox">       
+                <div class="imgBox">
+                    <img class="mainimg"src="tech.jpg" alt="" srcset="" width="300px" height="200px">
+                    <div class="overlay">
+                    <span style="font-size: 50px;" >Click on</span>
+                </div>
+            </div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit a facere rem doloremque quo.</p>
+                <div class="footerimg">
+                    <img class="logo" src="logo.jpg"  width="40px">
+                    <p class="name">John Doe</p>
+                    <p class="date">20 Sep 2024</p>
+                    <button>Technology</button>
+                </div></div>
+            <div class="contentBox">           
+                <div class="imgBox">
+                    <img class="mainimg"src="tech.jpg" alt="" srcset="" width="300px" height="200px">
+                    <div class="overlay">
+                    <span style="font-size: 50px;" >Click on</span>
+                </div>
+            </div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit a facere rem doloremque quo.</p>
+                <div class="footerimg">
+                    <img class="logo" src="logo.jpg"  width="40px">
+                    <p class="name">John Doe</p>
+                    <p class="date">20 Sep 2024</p>
+                    <button>Technology</button>
+                </div></div>
+        </main>
+    </div>
+</body>
+</html>
